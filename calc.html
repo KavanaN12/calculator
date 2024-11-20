@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>calculator</title>
+        <link rel="icon" type="icon" href="calculator.png">
+        <link rel="stylesheet" href="calc.css">
+    </head>
+    <body>
+        <form>
+        <pre>
+        <table cellspacing="10px" width="370px" height="490px">
+                <tr>
+                    <th colspan="4" id="intext"><input type="button" id="msg"><div id="ans"></div></th>
+                    
+                    
+                </tr>
+                <tr>
+                    <td><button class="c" id="C" value="C" type="submit">C</button></td>
+                    <th><button  class="c" id="dec" onclick="erase()" value="cancel" type="button">&#9003</button></th>
+                    <td><button class="c" id="deci" onclick="calculator(value),number('.')" value="." type="button">.</button></td>
+                    <th><button   class="c" id="div" onclick="calculator(value),number1(value)" value="/" type="button">/</button></th>
+                </tr>
+                <tr>
+                    <td><button class="n" id="n7" onclick="calculator(value),number(7)" value="7" type="button">7</button></td>
+                    <td><button  class="n" id="n8" onclick="calculator(value),number(8)" value="8" type="button">8</button></td>
+                    <td><button class="n" id="n9" onclick="calculator(value),number(9)" value="9" type="button">9</button></td>
+                    <th><button  class="c" id="mul" onclick="calculator(value),number1(value)" value="*" type="button">*</button></th>
+                </tr>
+                <tr>
+                    <td><button class="n" id="n6" onclick="calculator(value),number(6)" value="6" type="button">6</button></td>
+                    <td><button  class="n" id="n5" onclick="calculator(value),number(5)" value="5" type="button">5</button></td>
+                    <td><button  class="n" id="n4" onclick="calculator(value),number(4)" value="4" type="button">4</button></td>
+                    <th><button  class="c" id="sub" onclick="calculator(value),number1(value)" value="-" type="button">-</button></th>
+                </tr>
+                <tr>
+                    <td><button class="n" id="n3" onclick="calculator(value),number(3)" value="3" type="button">3</button></td>
+                    <td><button  class="n" id="n2" onclick="calculator(value),number(2)" value="2" type="button">2</button></td>
+                    <td><button  class="n" id="n1" onclick="calculator(value),number(1)" value="1" type="button">1</button></td>
+                    <th><button  class="c" id="add" onclick="calculator(value),number1(value)" value="+" type="button">+</button></th>
+                </tr>
+                <tr>
+                    <th><button   class="n" id="div" onclick="calculator(value),number(value)" value="doublezero" type="button" id="dzero">00</button></th>
+                    <td><button  class="n" id="n0" onclick="calculator(value),number(0)" value="0" type="button">0</button></td>
+                    <th colspan="2"><button  class="e" id="eql" onclick="calculator(value),number1(value)" value="=" type="button">=</button></th>
+                </tr>
+
+        </table>
+        </pre>
+    </form>
+    </body>
+    <script src="calc.js"></script>
+</html>
